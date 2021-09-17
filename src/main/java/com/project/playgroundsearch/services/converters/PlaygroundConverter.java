@@ -2,9 +2,10 @@ package com.project.playgroundsearch.services.converters;
 
 import com.project.playgroundsearch.database.entities.PlaygroundEntity;
 import com.project.playgroundsearch.services.models.PlaygroundModel;
+import org.springframework.stereotype.Component;
 
+@Component
 public class PlaygroundConverter {
-
     public PlaygroundModel entityToModel(PlaygroundEntity playgroundEntity) {
         PlaygroundModel playgroundModel = new PlaygroundModel();
         playgroundModel.setId(playgroundEntity.getId());

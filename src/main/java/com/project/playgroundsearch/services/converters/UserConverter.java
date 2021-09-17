@@ -2,7 +2,9 @@ package com.project.playgroundsearch.services.converters;
 
 import com.project.playgroundsearch.database.entities.UserEntity;
 import com.project.playgroundsearch.services.models.UserModel;
+import org.springframework.stereotype.Component;
 
+@Component
 public class UserConverter {
 
     public UserModel entityToModel(UserEntity userEntity) {

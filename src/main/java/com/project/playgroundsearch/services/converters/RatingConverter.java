@@ -2,7 +2,9 @@ package com.project.playgroundsearch.services.converters;
 
 import com.project.playgroundsearch.database.entities.RatingEntity;
 import com.project.playgroundsearch.services.models.RatingModel;
+import org.springframework.stereotype.Component;
 
+@Component
 public class RatingConverter {
 
     public RatingModel entityToModel(RatingEntity ratingEntity) {
